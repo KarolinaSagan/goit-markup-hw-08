@@ -1,0 +1,61 @@
+.modal {
+  display: block;
+  margin: auto;
+  margin-top: 93px;
+  width: 450px;
+  box-shadow: 0px 1px 3px $boxshadowcolor1, 0px 1px 1px $boxshadowcolor2,
+    0px 2px 1px $boxshadowcolor3;
+  border-radius: 4px;
+  background: $white;
+  z-index: 2;
+  transition-property: visibility;
+  visibility: visible;
+
+  &__icon-close {
+    margin-top: 8px;
+    margin-left: 412px;
+    border: 1px solid $iconcloseborder;
+    border-radius: 50%;
+
+    &:hover,
+    &:focus,
+    &:active {
+      cursor: pointer;
+      fill: $componentcolorblue;
+      border: 1px solid $componentcolorblue;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__div {
+    padding-left: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $bodytextcolor;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    margin-top: 221px;
+    width: 528px;
+
+    &__icon-close {
+      margin-left: 490px;
+    }
+  }
+}

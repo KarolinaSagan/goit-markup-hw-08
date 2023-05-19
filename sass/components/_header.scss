@@ -1,0 +1,19 @@
+header {
+  border-bottom: 1px solid $headerbordercolor;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}

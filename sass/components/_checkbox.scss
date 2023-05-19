@@ -1,0 +1,9 @@
+.checkbox {
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+
+  &:checked {
+    accent-color: $componentcolorblue;
+  }
+}

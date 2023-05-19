@@ -1,0 +1,114 @@
+.footer-page {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 60px;
+
+  &__div-768 {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  &__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    line-height: 1.19;
+    text-decoration: none;
+    color: $black;
+    text-align: center;
+  }
+  &__first-span {
+    color: $componentcolorblue;
+  }
+  &__second-span {
+    color: $white;
+  }
+  &__p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  &__ul {
+    padding-top: 20px;
+    display: flex;
+    gap: 10px;
+    list-style: none;
+  }
+
+  &__icon {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    fill: $white;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    &:active,
+    &:hover,
+    &:focus {
+      fill: $white;
+      background: $componentcolorblue;
+      border-radius: 50%;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__address {
+    padding-top: 5px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-page {
+    &__div-768 {
+      flex-direction: row;
+      gap: 144px;
+    }
+
+    &__div--social {
+      padding-top: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-page {
+    gap: 70px;
+    flex-direction: row;
+    align-items: normal;
+
+    &__logo {
+      text-align: left;
+    }
+
+    &__p {
+      text-align: left;
+    }
+    &_div {
+      padding-top: 10px;
+    }
+
+    &__address {
+      text-align: left;
+    }
+  }
+}

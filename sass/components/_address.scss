@@ -1,0 +1,32 @@
+.address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+  &__p {
+    color: $white;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.71;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  &__a {
+    color: $coloradress;
+    line-height: 1.71;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    margin-top: 9px;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $componentcolorblue;
+      fill: $componentcolorblue;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
