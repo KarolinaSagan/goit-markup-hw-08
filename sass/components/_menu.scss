@@ -83,10 +83,6 @@
     border: none;
     border-radius: 50%;
     outline: none;
-    &:hover,
-    &:focus {
-      background-color: rgba(0, 0, 0, 0.1);
-    }
   }
 
   &__container {
