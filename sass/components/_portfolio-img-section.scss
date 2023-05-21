@@ -1,7 +1,7 @@
 .portfolio-img-section {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 40px;
   gap: 30px;
 
   &__figcaption {
@@ -68,6 +68,30 @@
     }
     &:hover .portfolio-img-section__overlay {
       transform: translatex(0);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-img-section {
+    &__img {
+      width: 354px;
+    }
+    &__figcaption {
+      width: 354px;
+      height: 146px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-img-section {
+    &__img {
+      width: 370px;
+    }
+    &__figcaption {
+      width: auto;
+      height: auto;
     }
   }
 }

@@ -6,6 +6,10 @@
   padding-right: 15px;
   display: flex;
   gap: 284px;
+
+  &--portfolio {
+    gap: 40px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

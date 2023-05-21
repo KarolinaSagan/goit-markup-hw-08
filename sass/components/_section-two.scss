@@ -1,11 +1,7 @@
 .section-two {
   padding-top: 60px;
-
-  &__div-ul {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
+  padding-bottom: 60px;
+  flex-wrap: wrap;
 
   &__ul {
     list-style: none;
@@ -44,9 +40,7 @@
 }
 @media screen and (min-width: 768px) {
   .section-two {
-    &__div-ul {
-      flex-direction: row;
-    }
+    padding-bottom: 45px;
 
     &__H3 {
       text-align: left;
@@ -61,10 +55,7 @@
 @media screen and (min-width: 1200px) {
   .section-two {
     padding-top: 94px;
-
-    &__div-ul {
-      flex-direction: row;
-    }
+    padding-bottom: 0px;
 
     &__ul {
       flex-direction: row;

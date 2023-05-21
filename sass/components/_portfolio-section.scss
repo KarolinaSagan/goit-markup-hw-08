@@ -1,14 +1,21 @@
 .portfolio-section {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   flex-direction: column;
+
+  &__div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
 
   &__ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 10px;
+
+    justify-content: left;
+    gap: 8px;
   }
 
   &__button {
@@ -18,7 +25,8 @@
     background: $componentcolorgrey3;
     text-align: center;
     letter-spacing: 0.03em;
-    padding: 4px 22px;
+    width: 103px;
+    height: 38px;
     border: none;
     border-radius: 4px;
 
@@ -33,6 +41,42 @@
       border-radius: 4px;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-section {
+    &__div {
+      display: flex;
+      gap: 8px;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    &__ul {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__div {
+      gap: 10px;
+    }
+
+    &__ul {
+      gap: 10px;
+    }
+
+    &__button {
+      height: auto;
+      width: auto;
+      padding: 4px 22px;
     }
   }
 }
