@@ -79,7 +79,9 @@
     }
     &__figcaption {
       width: 354px;
-      height: 146px;
+      &--first {
+        padding-bottom: 56px;
+      }
     }
   }
 }
@@ -91,7 +93,9 @@
     }
     &__figcaption {
       width: auto;
-      height: auto;
+      &--first {
+        padding-bottom: 20px;
+      }
     }
   }
 }
