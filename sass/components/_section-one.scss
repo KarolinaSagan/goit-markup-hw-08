@@ -4,6 +4,15 @@
   padding-top: 118px;
   padding-bottom: 118px;
 
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section1 {
+      background: url(../images/tlo480x2.jpg);
+    }
+  }
+
   &__H1 {
     font-weight: 900;
     font-size: 24px;
@@ -65,6 +74,16 @@
   .section-one {
     background: linear-gradient($lineargradientcolor1, $lineargradientcolor1),
       url("../images/tlo768.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .section1 {
+        background: url(../images/tlo768x2.jpg);
+      }
+    }
+
     &__H1 {
       font-size: 26px;
     }
@@ -78,10 +97,19 @@
     padding-top: 200px;
     padding-bottom: 200px;
 
-    &__H1 {
-      font-size: 44px;
-      line-height: 1.36;
-      width: 696px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .section1 {
+        background: url(../images/tlo1200x2.jpg);
+      }
     }
+  }
+
+  &__H1 {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
   }
 }
